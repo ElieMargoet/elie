@@ -19,3 +19,28 @@
  */
 
 /* Your stylesheets goes here... */
+
+body {
+	background-color:#EFEEEA;
+}
+
+.titleArticle {
+	padding-top:30px;
+	font-family: Helvetica;
+}
+
+.block {
+	background-color: white;;
+	margin-top: 100px;
+	border-radius: 30px;
+	-moz-box-shadow: -10px -10px 30px 0px #c0c0c0;
+	-webkit-box-shadow: -10px -10px 30px 0px #c0c0c0;
+	-o-box-shadow: -10px -10px 30px 0px #C0c0c0;
+	box-shadow: -10px -10px 30px 0px #c0c0c0;
+	filter:progid:DXImageTransform.MicrosoftShadow(color=#c0c0c0,Direction=315,Strenght=30);
+}
+
+.bouton {
+	margin:20px;
+	margin-left:50px;
+}

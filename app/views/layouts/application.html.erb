@@ -9,6 +9,13 @@
   </head>
 
   <body>
+  <%= nav_bar fixed: :top, brand: "MES VFX" do %>
+    <%= menu_group do %>
+        <%= menu_item "Home", root_path%>
+        <%= menu_item "About Us" %>
+        <%= menu_item "Contact" %>
+    <% end %>
+<% end %>
     <%= yield %>
   </body>
 </html>
