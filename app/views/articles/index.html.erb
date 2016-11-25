@@ -1,6 +1,6 @@
 <p id="notice"><%= notice %></p>
 
-
+<link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet"> 
 
 <div class="container block">
   <div class="row">
@@ -8,6 +8,7 @@
       <h1 class="titleArticle text-center">Articles</h1>
     </div>
   </div>
+
 
 <% @articles.each do |article| %>
   <div class="row">
@@ -23,28 +24,36 @@
       <p><%= article.text %></p>
     </div>
 
-    <div class="col-md-12">
-    <%= image_tag article.image, class: "img-responsive" %>
+
+  <div class="col-md-12 text-center">
+    <%= image_tag article.image, class: "img-responsive text-center centerElie" %>
+  </div> 
+    
+
+<div class="row">
+    <div class="text-center col-md-4 text-center">
+      <%=  button_to 'Show', article, class: "btn btn-primary btn-sm buttonCustom" %>
     </div>
 
-  <div class="col-md-12">
-
-    <div class="text-center col-md-3 btn btn-primary btn-sm bouton">
-      <p><%=  link_to 'Show', article %></p>
+    <div class="text-center col-md-4 text-center">
+      <%=  button_to 'Edit', edit_article_path(article), class: "btn btn-primary btn-sm buttonCustom" %>
     </div>
 
-    <div class="text-center col-md-3 btn btn-primary btn-sm bouton">
-      <p><%=  link_to 'Edit', edit_article_path(article) %></p>
+    <div class="text-center col-md-4 text-center">
+      <%=  button_to 'Destroy', article, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-primary btn-sm buttonCustom"  %>
+
     </div>
 
-    <div class="text-center col-md-3 btn btn-primary btn-sm bouton">
-      <p><%=  link_to 'Destroy', article, method: :delete, data: { confirm: 'Are you sure?' }  %></p>
-    </div>
-
+</div>
 </div>
       <% end %>
 
 
 <br>
+<div class="row">
+  <div class="col-md-12 text-center">
+  <%= link_to 'New Article', new_article_path, class: "btn btn-info text-center" %>
+  </div>
+</div>
 
-<%= link_to 'New Article', new_article_path %>
+

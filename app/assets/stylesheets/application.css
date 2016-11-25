@@ -22,6 +22,7 @@
 
 body {
 	background-color:#EFEEEA;
+	font-family: 'Indie Flower';
 }
 
 .titleArticle {
@@ -40,7 +41,12 @@ body {
 	filter:progid:DXImageTransform.MicrosoftShadow(color=#c0c0c0,Direction=315,Strenght=30);
 }
 
-.bouton {
-	margin:20px;
-	margin-left:50px;
+
+.centerElie {
+	margin: auto;
+	margin-bottom:50px;
+}
+
+.buttonCustom {
+	padding: 10px 150px;
 }
